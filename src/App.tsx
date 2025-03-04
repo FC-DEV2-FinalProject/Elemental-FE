@@ -1,3 +1,6 @@
+import Router from './routes/Router'
+import './styles/tailwind.css'
+
 export default function App() {
-  return <h1>App.tsx</h1>
+  return <Router />
 }
