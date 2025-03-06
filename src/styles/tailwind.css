@@ -23,6 +23,13 @@
 }
 @font-face {
   font-family: 'Pretendard';
+  font-weight: 600;
+  src:
+    url('/fonts/Pretendard-SemiBold.subset.woff2') format('woff2'),
+    url('/fonts/Pretendard-SemiBold.subset.woff') format('woff');
+}
+@font-face {
+  font-family: 'Pretendard';
   font-weight: 700;
   src:
     url('/fonts/Pretendard-Bold.subset.woff2') format('woff2'),
@@ -31,8 +38,11 @@
 
 @theme {
   /* ============= 커스텀 정의 ============= */
-  /* 헤더 높이값 */
-  --header-height: 58px;
+  /* 헤더 높이값 - 58px */
+  --header-height: 3.625rem;
+
+  /* pc 너비 기준 - 더 추가해도 됨 */
+  --pc-inner: 57.5rem; /* 920px */
 
   /* z-index */
   --header-index: 100;
@@ -41,6 +51,8 @@
 
   /* 컬러 - 이렇게 정의하면 text-*, bg-* 같은 유틸리티도 사용 가능 */
   --color-primary: #15c0cc;
+  --color-graybg: #f6f6f6;
+  --color-darknavy: #041C54;
   /* ============= //커스텀 정의 ============= */
 
   /* ============= 재정의 ============= */

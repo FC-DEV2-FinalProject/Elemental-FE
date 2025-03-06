@@ -11,7 +11,7 @@ export default function Footer() {
         />
       </div>
 
-      <div className="flex flex-col gap-8 w-full pt-16 border-t text-xs space-x-4 text-[#1E2124]">
+      <div className="flex flex-col flex-wrap gap-8 w-full pt-16 border-t text-xs space-x-4 text-[#1E2124]">
         <div className="flex justify-between">
           <Link
             to="#"
@@ -34,13 +34,11 @@ export default function Footer() {
             Contact us
           </Link>
         </div>
-        <div className="text-left">
-          <Link
-            to="#"
-            className="hover:underline">
-            안내/지원 바로가기
-          </Link>
-        </div>
+        <Link
+          to="#"
+          className="hover:underline">
+          안내/지원 바로가기
+        </Link>
       </div>
 
       <div className="flex flex-col gap-8 text-center text-xs text-[#1E2124]">
