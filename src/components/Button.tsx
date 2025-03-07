@@ -11,7 +11,7 @@ type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   disabled?: boolean
 }
 
-const buttonVariants = cva('py-16 px-10 font-semibold transition-all', {
+const buttonVariants = cva('py-[16px] px-[10px] font-semibold transition-all', {
   variants: {
     variant: {
       Solid_Primary:
@@ -24,9 +24,9 @@ const buttonVariants = cva('py-16 px-10 font-semibold transition-all', {
         'text-[#191919] border border-[rgba(157,157,157,0.50)] hover:bg-[rgba(25, 25, 25, 0.05)] focus:bg-[rgba(25, 25, 25, 0.15)] disabled:text-[#ABABAC] disabled:cursor-not-allowed'
     },
     size: {
-      Large: 'text-[16px] rounded-[8px] h-[48px]',
-      Medium: 'text-[14px] rounded-[6px] h-[40px]',
-      Small: 'text-[14px] rounded-[6px] h-[32px]'
+      Large: 'text-[16px] rounded-[8px] ',
+      Medium: 'text-[14px] rounded-[6px] ',
+      Small: 'text-[14px] rounded-[6px] '
     }
   },
 
@@ -42,16 +42,10 @@ export default function Button({
   size,
   ...props
 }: ButtonProps) {
-  const computedClassName = cn(buttonVariants({ variant, size }), className)
-
-  console.log('Button className:', computedClassName) // 클래스 확인용
-  console.log(buttonVariants({ variant: 'Solid_Primary', size: 'Medium' }))
-
   return (
     <button
       {...props}
-      className={computedClassName}>
-      {props.children}
-    </button>
+      className={cn(buttonVariants({ variant, size }), className)}
+    />
   )
 }
