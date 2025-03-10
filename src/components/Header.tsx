@@ -21,12 +21,14 @@ const Header = () => {
       {isPC ? (
         <header className="sticky z-[var(--header-index)] pt-64 flex justify-center border-b border-lineN">
           <div className="flex items-start w-914 justify-between">
-            <div className="pt-2 w-248">
+            <Link
+              to="/"
+              className="pt-2 w-248">
               <img
                 src={Logo}
                 alt="IPAT 로고"
               />
-            </div>
+            </Link>
             <nav>
               <ul className="flex">
                 <li className="relative text-sm text-center border-b-[2px] border-transparent hover:border-primary group">
@@ -36,42 +38,42 @@ const Header = () => {
                     시험소개
                   </Link>
                   <ul className="absolute mt-2 w-[100%] invisible shadow-[var(--shadow-strong)] pt-11 pb-15 flex flex-col bg-white rounded-b-[8px] group-hover:visible">
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
                         인사말
                       </Link>
                     </li>
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
                         IPAT 소개
                       </Link>
                     </li>
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
                         자격정보
                       </Link>
                     </li>
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
                         출제기준
                       </Link>
                     </li>
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
                         평가방법
                       </Link>
                     </li>
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
@@ -87,21 +89,21 @@ const Header = () => {
                     응시안내
                   </Link>
                   <ul className="absolute mt-2 w-[100%] invisible shadow-[var(--shadow-strong)] pt-11 pb-15 flex flex-col bg-white rounded-b-[8px] group-hover:visible">
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
                         연간일정
                       </Link>
                     </li>
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
                         접수방법
                       </Link>
                     </li>
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
@@ -117,21 +119,21 @@ const Header = () => {
                     시험접수
                   </Link>
                   <ul className="absolute mt-2 w-[100%] invisible shadow-[var(--shadow-strong)] pt-11 pb-15 flex flex-col bg-white rounded-b-[8px] group-hover:visible">
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
                         시험 접수하기
                       </Link>
                     </li>
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
                         접수현황
                       </Link>
                     </li>
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
@@ -147,21 +149,21 @@ const Header = () => {
                     교육프로그램
                   </Link>
                   <ul className="absolute mt-2 w-[100%] invisible shadow-[var(--shadow-strong)] pt-11 pb-15 flex flex-col bg-white rounded-b-[8px] group-hover:visible">
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
                         교육안내
                       </Link>
                     </li>
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
                         온라인 교육
                       </Link>
                     </li>
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
@@ -177,35 +179,35 @@ const Header = () => {
                     안내/지원
                   </Link>
                   <ul className="absolute mt-2 w-[100%] invisible shadow-[var(--shadow-strong)] pt-11 pb-15 flex flex-col bg-white rounded-b-[8px] group-hover:visible">
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
                         공지사항
                       </Link>
                     </li>
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
                         질문/답변
                       </Link>
                     </li>
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
                         자주묻는질문
                       </Link>
                     </li>
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
                         자료실
                       </Link>
                     </li>
-                    <li className="text-xs">
+                    <li className="text-xs hover:bg-[#e6e9ee]">
                       <Link
                         to="#none"
                         className="pt-5 pb-5 inline-block w-[100%]">
@@ -279,12 +281,12 @@ const Header = () => {
         </header>
       ) : (
         <header className="sticky top-0 flex justify-between items-center h-(--header-height) pl-16 pr-14 shadow-2xs border-b border-solid border-[#f1f1f1]">
-          <div>
+          <Link to="/">
             <img
               src={LogoM}
               alt="IPAT 로고"
             />
-          </div>
+          </Link>
           <button
             type="button"
             className="relative size-24">
