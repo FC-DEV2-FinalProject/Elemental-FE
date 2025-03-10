@@ -1,5 +1,5 @@
 import LogoM from '../assets/logo_m.png'
-import Logo from '../assets/logo.png'
+import Logo from '../assets/logo.svg'
 import Login from '../assets/login.svg'
 import Logout from '../assets/logout.svg'
 import Myinfo from '../assets/myinfo.svg'
@@ -21,7 +21,7 @@ const Header = () => {
       {isPC ? (
         <header className="sticky z-[var(--header-index)] pt-64 flex justify-center border-b border-lineN">
           <div className="flex items-start w-914 justify-between">
-            <div className="pt-2">
+            <div className="pt-2 w-248">
               <img
                 src={Logo}
                 alt="IPAT 로고"
