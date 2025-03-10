@@ -36,6 +36,10 @@
     url('/fonts/Pretendard-Bold.subset.woff') format('woff');
 }
 
+body {
+  color: #191919;
+}
+
 @theme {
   /* ============= 커스텀 정의 ============= */
   /* 헤더 높이값 - 58px */
@@ -51,8 +55,17 @@
 
   /* 컬러 - 이렇게 정의하면 text-*, bg-* 같은 유틸리티도 사용 가능 */
   --color-primary: #15c0cc;
+  --color-primaryL: #4bd3dd;
+  --color-primaryD: #13adb8;
+
   --color-graybg: #f6f6f6;
+  --color-gray90: #909091;
+  --color-lineN: #c5c5c6;
+
   --color-darknavy: #041C54;
+
+  /* box-shadow */
+  --shadow-strong: 0px 6px 12px 0px rgba(0, 0, 0, 0.10), 0px 4px 8px 0px rgba(0, 0, 0, 0.10), 0px 0px 4px 0px rgba(0, 0, 0, 0.10);
   /* ============= //커스텀 정의 ============= */
 
   /* ============= 재정의 ============= */
